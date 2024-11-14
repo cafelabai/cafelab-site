@@ -18,16 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Community-centered AI For Education Lab @ IUI
+title: CAFE Lab @ IUI
 email: cafelab@iu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Cyberspacial billboard for the ATo Lab, a multidisciplinary research lab
-  at Northeastern University working at the intersections of human-computer interaction,
-  games, and social justice.
+  Community-Centered AI For Education Lab at Indiana University Indianapolis.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cafelab.ai" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+#twitter_username: jekyllrb
+github_username: cafelabai
 
 # Build settings
 theme: minima
