@@ -1,0 +1,14 @@
+- name: "Lyniesha Ward"
+  position: "Faculty Founder"
+  current: true
+  headshot: "placeholder-headshot.png"
+
+- name: "Sunandan Chakraborty"
+  position: "Faculty Founder"
+  current: true
+  headshot: "placeholder-headshot.png"
+
+- name: "Youngbok Hong"
+  position: "Faculty Founder"
+  current: true
+  headshot: "placeholder-headshot.png"
