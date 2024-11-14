@@ -1,64 +1,42 @@
-<div class="header">
-  <!-- This row contains a navbar contianing links to the different pages of the website -->
-  <nav class="navbar navbar-expand-lg mb-2">
+{% comment %}background is defined in head.html{% endcomment %}
+{% if background %}
+  <header class="header bg-image" style="background-image: url('{{ background | relative_url }}')">
+{% else %}
+  <header class="header bg-no-image">
+{% endif %}
     <div class="container">
-      <a class="navbar-brand" href="/">
-        <!-- 'div' for the logo. It contains two logos, one white the other brown. When hovered, the white logo fades away. -->
-        <!--<div class="logo-container">-->
-          <!-- class="lab-logo-top" -->
-          <img
-            src="assets/images/cafelab-logo.png"
-            alt="CAFE Lab logo"
-          />
-        </div>
-      </a>
-      <!-- 'button' for the responsive navbar toggle. Visible only on smaller screens. -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="row">
+        <div class="col-md-10 col-lg-8 position-relative mx-auto">
+          <h1{% if page.layout == 'home' %} class="home"{% endif %}>{{ page.title }}</h1>
+          
+          <div class="lead">{{ page.description | markdownify }}</div>
+          
+          {% if page.collection == 'posts' %}
+            <p class="meta">
+              <time>{{ page.date | date: '%B %d, %Y' }}</time>
+              {% if page.author or page.authors %}
+                &bull; {{ page.author | join: ', ' }}{{ page.authors | join: ', ' }}
+              {% endif %}
+            </p>
+          {% endif %}
 
-      <!-- Contains the actual navbar links. It collapses on smaller screens. -->
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarNav"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/people">People</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/404.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/404.html">Publications</a>
-          </li>
-          <li class="nav-item">
-            <!-- Includes a white call-to-action button with some additional classes -->
-            {% include button.html alt=true classes="d-lg-none d-inline-block"%}
-          </li>
-        </ul>
+          <div class="tags">
+            {% if page.collection == 'posts' and page.tags and site.archive_permalink %}
+              {% for tag in page.tags %}
+              <a class="badge{% if site.rounded_corners != false %} rounded-pill{% endif %}" href="{{ site.archive_permalink | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
       </div>
-      {% include button.html alt=true classes="d-lg-inline-block d-none"%}
     </div>
-  </nav>
-  <!-- This row contains a title that tries to match the title of the current page. Defaults to site title if not. -->
-  <div class="row py-3" style="background-color: #A64B42;">
-    <div class="col text-center" style="background-color: #A64B42;>
-      <h1>
-        {% if page.title %} {{ page.title }} {% else %} {{ site.title }} {%
-        endif %}
-      </h1>
-    </div>
-  </div>
-</div>
+    {% if page.background.img and page.background.by %}
+      <div class="caption d-print-none">
+        {% if page.background.href %}
+          Image by <a href="{{ page.background.href }}">{{ page.background.by }}</a>
+        {% else %}
+          Image by {{ page.background.by }}
+        {% endif %}
+      </div>
+    {% endif %}
+  </header>
