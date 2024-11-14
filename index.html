@@ -16,6 +16,10 @@ layout: "wrapper"
 
 <!-- This section is for the 'About' part of the site. -->
 <section class="about" id="about">
+  <div class="d-flex flex-column align-items-center about-heading">
+    <!-- This 'include' tag inserts content from the specified markdown file using Jekyll's Liquid templating engine. -->
+    {% include text-content/about-heading.md %}
+  </div>
   <div class="container py-5">
     <div class="row">
       <div class="col-sm-12 col-md-5">
@@ -27,9 +31,7 @@ layout: "wrapper"
         />
       </div>
       <div class="col-sm-12 col-md-7 mb-sm-4">
-        {% include text-content/about-heading.md %}
-        <!-- This 'include' tag inserts the text content for this section. -->
-        <div class="gi-text mt-2 mb-4">
+       <div class="gi-text mt-2 mb-4">
           {% include text-content/about-body.md %}
         </div>
         <!-- This is a button that links to an email address. -->
