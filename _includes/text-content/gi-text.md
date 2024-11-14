@@ -10,5 +10,5 @@ If you are a community member or organization, or a representative of a school o
 </p>
 
 <p>
-If you are a faculty member at IUI, part of the IU system, or beyond, please contact us to discuss potential collaborations. We are always looking for new opportunities to work with others!
+If you are a faculty member at IUI, part of the IU system, or beyond, please contact us to discuss potential collaborations. We are always looking for new opportunities to work with others.
 </p>
