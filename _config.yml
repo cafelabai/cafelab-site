@@ -1,54 +1,65 @@
-# SITE SETTINGS
-title: CAFE Lab                         # Title in top navigation bar (navbar) and <head>
-author: CAFE Lab                    # Used for copyright statement in footer
-#baseurl: "https://cafelab.ai/"                   # Only required if your site is in a directory e.g. https://username.github.io/sitename
-                                        # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
-                                        # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/markdown/#links
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# SOCIAL PROFILES
-social:
-#  email: name@example.com
-#  twitter: peterdesmet
-  github: github_username               # Can also be a github_username/repository
-#  mastodon: https://mastodon.social/@mastodon_username
-#  facebook:                             # A URL
-#  disqus: disqus_sitename               # Enable Disqus comments from disqus_sitename.disqus.com
+title: Community-centered AI For Education Lab @ IUI
+email: cafelab@iu.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  Cyberspacial billboard for the ATo Lab, a multidisciplinary research lab
+  at Northeastern University working at the intersections of human-computer interaction,
+  games, and social justice.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://cafelab.ai" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username: jekyll
 
-# THEME SETTINGS (ALL OPTIONAL)
-posts_on_home: 2                        # Show x number of latest posts on homepage, can be 0
-tweets_on_home: false                    # Show Twitter feed of social.twitter on homepage
-archive_permalink: /blog/               # Permalink of page using the archive.html layout, required when using post tags
-github_edit: true                       # Show an "edit this page" link in the footer, can also be name of branch (default: main)
-colors:
-  links: "#007bff"                      # Color for links: use a readable color that contrasts well with dark text
-  banner: "#007bff"                     # Background color for page banners: use color that contrasts well with white
-  footer: "#6c757d"                     # Background color for footer: use color that contrasts well with white
-font_serif: true                        # Font type for page content: serif (default) or slightly smaller sans-serif
-rounded_corners: true                   # Enable (default) rounded corners on boxes and buttons
-logo: /assets/theme/images/cafe-mug.png # Logo in navbar, will be displayed with 30px height
-
-# BUILD SETTINGS
-markdown: kramdown
-plugins:                                # If you build your site on gh-pages, only use these plugins: https://pages.github.com/versions/
+# Build settings
+theme: minima
+plugins:
   - jekyll-feed
-  - jekyll-sitemap
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - LICENSE
-  - package-lock.json
-  - package.json
-  - petridish.gemspec
 
-# FRONTMATTER DEFAULTS
+sass:
+  sass_dir: _sass
+  style: compressed
+
 defaults:
   - scope:
       path: ""
+      type: "posts"
     values:
-      layout: default                   # Use default.html layout by default for all files
-  - scope:
-      type: posts
-    values:
-      permalink: "/blog/:year/:slug/"   # Use /blog/yyyy/{filename}/ as permalink for all posts
+      layout: "wrapper"
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
