@@ -3,6 +3,62 @@ layout: "wrapper"
 title: "Meet the People"
 ---
 
+      <div class="polaroid d-flex flex-column align-items-center justify-content-center shadow">
+        <div class="row">
+          <!-- 'img' tag for headshot. -->
+          <img
+            src="assets/images/headshots/jfprice.jpg"
+            alt="Jeremy F Price"
+            class="img-fluid headshot"
+          />
+        </div>
+        <div class="row">
+          <div class="col-8 polaroid-text">
+            <!-- 'h2' tag for name and a 'span' tag for position. -->
+            <h2>Jeremy F Price</h2>
+            <span class="lab-title">(he/him/his)</span><br />
+            <span class="lab-title"><strong>Founding Faculty</strong></span>
+          </div>
+          <div class="col-4 polaroid-icons d-flex justify-content-end">
+            <!-- Links to person's LinkedIn profile and personal website. The icons are styled as clickable links. -->
+            <a href="https://www.linkedin.com/in/jeremyfprice/" class="linkedin-icon">
+              <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
+            </a>&nbsp;&nbsp;
+            <a href="https://orcid.org/0000-0002-6506-3526">
+              <img src="assets/images/icons/orcid.svg" alt="ORCID logo" />
+            </a>&nbsp;&nbsp;
+            <a href="https://education.indianapolis.iu.edu/faculty-research/faculty-directory/price-jeremy.html" class="external-site-icon">
+              <img src="assets/images/icons/iu.svg" alt="IU logo" />
+            </a>&nbsp;&nbsp;
+            <a href="https://www.jeremyfprice.info/" class="external-site-icon">
+              <img src="assets/images/icons/external.svg" alt="Website logo" />
+            </a>
+          </div>
+          <div class="col-8 polaroid-text">
+            <!-- 'h2' tag for name and a 'span' tag for position. -->
+            <h2>Lyniesha Ward</h2>
+            <--<span class="lab-title">(he/him/his)</span><br />
+            <span class="lab-title"><strong>Founding Faculty</strong></span>
+          </div>
+          <div class="col-4 polaroid-icons d-flex justify-content-end">
+            <!-- Links to person's LinkedIn profile and personal website. The icons are styled as clickable links. -->
+            <a href="https://www.linkedin.com/in/jeremyfprice/" class="linkedin-icon">
+              <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
+            </a>&nbsp;&nbsp;
+            <a href="https://orcid.org/0000-0002-6506-3526">
+              <img src="assets/images/icons/orcid.svg" alt="ORCID logo" />
+            </a>&nbsp;&nbsp;
+            <a href="https://education.indianapolis.iu.edu/faculty-research/faculty-directory/price-jeremy.html" class="external-site-icon">
+              <img src="assets/images/icons/iu.svg" alt="IU logo" />
+            </a>&nbsp;&nbsp;
+            <a href="https://www.jeremyfprice.info/" class="external-site-icon">
+              <img src="assets/images/icons/external.svg" alt="Website logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+
 <div class="people">
   <!-- 'section' for the current members of the team. -->
   <section class="current-members py-4">
