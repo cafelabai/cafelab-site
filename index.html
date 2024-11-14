@@ -10,26 +10,52 @@ layout: "wrapper"
     id="hero-img"
     class="img-fluid"
     src="assets/images/hero_banner2.png"
-    alt="Group of people working in a cafe lab on community engaged work"
+    alt="Group of people working in CAFE Lab on community engaged work"
   />
 </section>
 
 <!-- This section is for the 'About' part of the site. -->
 <section class="about" id="about">
-  <div
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-5">
+        <img
+          id="cll-img"
+          class="img-fluid my-2"
+          src="assets/images/cafelab-logo.png"
+          alt="CAFE Lab logo"
+        />
+      </div>
+      <div class="col-sm-12 col-md-7 mb-sm-4">
+        {% include text-content/about-heading.md %}
+        <!-- This 'include' tag inserts the text content for this section. -->
+        <div class="gi-text mt-2 mb-4">
+          {% include text-content/about-body.md %}
+        </div>
+        <!-- This is a button that links to an email address. -->
+        <!--<button class="btn btn-cta" type="button">
+          <a href="mailto:ato.neulab@gmail.com">
+            <img src="/assets/images/icons/email.svg" alt="Mail icon" />
+            Email Us!
+          </a>
+        </button>-->
+      </div>
+    </div>
+  <!--<div
     class="container d-flex flex-column align-items-center justify-content-center py-5"
   >
-    <div class="d-flex flex-column align-items-center about-heading">
+    <div class="d-flex flex-column align-items-center about-heading">-->
+    
       <!-- This 'include' tag inserts content from the specified markdown file using Jekyll's Liquid templating engine. -->
-      {% include text-content/about-heading.md %}
+      <!--{% include text-content/about-heading.md %}
     </div>
-    <div class="text-center about-body mt-1 mb-2">
+    <div class="text-center about-body mt-1 mb-2">-->
       <!-- Similar 'include' tag for the body text in the 'About' section. -->
-      {% include text-content/about-body.md %}
-    </div>
+      <!--{% include text-content/about-body.md %}
+    </div>-->
     <!-- This include is for a button. The 'alt' and 'classes' parameters are passed to the included HTML. -->
-    {% include button.html alt=false classes="about-button mb-3"%}
-  </div>
+    <!--{% include button.html alt=false classes="about-button mb-3"%}
+  </div>-->
 </section>
 
 <!-- This section is for displaying different research areas of the lab -->
