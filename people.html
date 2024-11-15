@@ -54,6 +54,7 @@ title: "Meet the People"
         {% endif %} {% endfor %}
       </div>
     </div>
+    {% for person in site.data.people %} {% if person.current == true and person.position == "Graduate Research Assistant" %}
     <div class="container d-flex align-items-center flex-column">
       <h1>Students</h1>
       <div
@@ -63,7 +64,6 @@ title: "Meet the People"
         <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
         <!-- Checks if the person has a linked headshot picture, uses a generic default if not. -->
         <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
-        {% for person in site.data.people %} {% if person.current == true and person.position != "Graduate Research Assistant" %}
         <div
           class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
         >
@@ -98,9 +98,10 @@ title: "Meet the People"
             </div>
           </div>
         </div>
-        {% endif %} {% endfor %}
+        {% endif %}
       </div>
     </div>
+    {% endfor %}
   </section>
 </div>
 
