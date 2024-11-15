@@ -1,3 +1,3 @@
 <!-- Biii -->
 
-<!--We primarily work with and for people in marginalizing contexts towards designs that empower by increasing visibility of the work communities are already engaged with and working towards self-determination where those communities are engaged in the design process.-->
+Community engaged and transformative research is at the core of what we do. We don't just work within this field&mdash;we actively help shape its practices and direction. By building infrastructures and conducting research, we seek to contribute in meaningful ways to continue to put communities at the heart of scholarship.
