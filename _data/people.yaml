@@ -2,6 +2,10 @@
   position: "Faculty Founder"
   current: true
   headshot: "jfprice.jpg"
+  linkedin: "https://www.linkedin.com/in/jeremyfprice/"
+  website: "https://www.jeremyfprice.info/"
+  orcid: "https://orcid.org/0000-0002-6506-3526"
+  iuprofile: "https://education.indianapolis.iu.edu/faculty-research/faculty-directory/price-jeremy.html"
 
 - name: "Lyniesha Ward"
   position: "Faculty Founder"
