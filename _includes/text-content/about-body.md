@@ -2,7 +2,7 @@
 <!-- Do not remove any tags, just edit the text in between -->
 
 <p>
-<strong>Welcome to the CAFE Lab at Indiana University Indianapolis!</strong> We're a team of researchers, designers, and developers dedicated to creating AI tools for education that prioritize fairness, openness, and community involvement. We believe AI should be developed <em>with</em> communities, not just for them, so everyone can share in its benefits, with a particular focus on local needs and values.
+<strong>Welcome to the CAFE Lab at Indiana University Indianapolis!</strong> CAFE stands for Community-Centered AI For Education. We're a team of researchers, designers, and developers dedicated to creating AI tools for education that prioritize fairness, openness, and community involvement. We believe AI should be developed <em>with</em> communities, not just for them, so everyone can share in its benefits, with a particular focus on local needs and values.
 </p>
 
 <p>
