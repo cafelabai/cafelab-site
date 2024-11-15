@@ -53,9 +53,7 @@ title: "Meet the People"
         </div>
         {% endif %} {% endfor %}
       </div>
-    </div>
-    {% for person in site.data.people %} {% if person.current == true and person.position == "Graduate Research Assistant" %}
-    <div class="container d-flex align-items-center flex-column">
+      {% for person in site.data.people %} {% if person.current == true and person.position == "Graduate Research Assistant" %}
       <h1>Students</h1>
       <div
         class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
@@ -98,10 +96,9 @@ title: "Meet the People"
             </div>
           </div>
         </div>
-        {% endif %}
+        {% endif %} {% endfor %}
       </div>
     </div>
-    {% endfor %}
   </section>
 </div>
 
