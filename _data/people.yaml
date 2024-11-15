@@ -20,7 +20,28 @@
 
 - name: "Youngbok Hong"
   position: "Faculty Founder"
+  pronouns: "she/her/hers"
   current: true
   headshot: "yhong.jpg"
+  linkedin: "https://www.linkedin.com/in/youngbok-hong-50150b/"
+  iuprofile: "https://herron.indianapolis.iu.edu/about/directory/profiles/hong-youngbok.html"
 
-- name: "Jared Brosch"
+- name: "Akaash Arora"
+  position: "Graduate Research Assistant"
+  current: true
+  headshot: "placeholder-headshot.png"
+
+- name: "Kshitija Suresh Jadhav"
+  position: "Graduate Research Assistant"
+  current: true
+  headshot: "placeholder-headshot.png"
+
+- name: "Kirthivasan Pandurangan Neelavathi"
+  position: "Graduate Research Assistant"
+  current: true
+  headshot: "placeholder-headshot.png"
+
+- name: "Ankit Singh Chauhan"
+  position: "Graduate Research Assistant"
+  current: true
+  headshot: "placeholder-headshot.png"
