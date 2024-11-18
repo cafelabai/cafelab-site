@@ -9,13 +9,14 @@ title: "CAFE Lab Projects"
 {% if project.status == "current" %}
     <div class="project-item">
     <div class="row">
-        <div class="col-2 project-logo">
+        <div class="col-4 project-logo">
             <img
+                class="project-logo"
                 src="assets/images/centr-seek-logo.png"
                 alt="CEnTR*SEEK logo"
               />
         </div>
-        <div class="col-10 project-description">
+        <div class="col-8 project-description">
             <h2>{{ project.title }}</h2>
             <p>{{ project.abstract }}</p>
             <div class="funding"><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
