@@ -23,7 +23,8 @@
 
 - name: "Sunandan Chakraborty"
   position: "Faculty Founder"
-  title: :"Associate Professor"
+  pronouns: "he/him/his"
+  title: "Associate Professor"
   school: "School of Informatics and Computing"
   current: true
   headshot: "schakraborty.jpg"
