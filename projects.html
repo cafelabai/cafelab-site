@@ -20,19 +20,20 @@ title: "CAFE Lab Projects"
 <div class="container py-5">
 {% for project in site.data.projects %}
 {% if project.status == "current" %}
+    <div class="project-item">
     <div class="row">
         <div class="col-sm-12 col-md-5 align-items-center">
-            <p align="center"><img
-                id="cll-img"
-                class="img-fluid my-2"
+            <img
+                class="project-logo"
                 src="assets/images/centr_seek-just_logo-transparent.png"
-                alt="CAFE Lab logo"
-              /></p>
+                alt="CEnTR*SEEK logo"
+              />
         </div>
         <div class="col-sm-12 col-md-7 mb-sm-4">
             <h2>{{ project.title }}</h2>
             <p>{{ project.abstract }}</p>
         </div>
+    </div>
     </div>
 {% endif %}
 {% endfor %}
