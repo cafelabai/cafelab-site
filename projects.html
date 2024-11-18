@@ -17,19 +17,19 @@ title: "CAFE Lab Projects"
     </section>
 </div>
 
-<div class="container py-5">
+<div class="container">
 {% for project in site.data.projects %}
 {% if project.status == "current" %}
     <div class="project-item">
     <div class="row">
-        <div class="col-8 project-logo">
+        <div class="col-4 project-logo">
             <img
                 src="assets/images/centr_seek-just_logo-transparent.png"
                 alt="CEnTR*SEEK logo"
-                width="250px"
+                width="150px"
               />
         </div>
-        <div class="col-12 project-description">
+        <div class="col-8 project-description">
             <h2>{{ project.title }}</h2>
             <p>{{ project.abstract }}</p>
         </div>
