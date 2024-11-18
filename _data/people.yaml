@@ -1,6 +1,8 @@
 - name: "Jeremy Price"
   position: "Faculty Founder"
   pronouns: "he/him/his"
+  title: "Associate Professor"
+  school: "School of Education"
   current: true
   headshot: "jfprice.jpg"
   linkedin: "https://www.linkedin.com/in/jeremyfprice/"
@@ -11,6 +13,8 @@
 - name: "Lyniesha Ward"
   pronouns: "she/her/hers"
   position: "Faculty Founder"
+  title: "Assistant Professor"
+  school: "School of Science"
   current: true
   headshot: "lward.png"
   linkedin: "https://www.linkedin.com/in/lyniesha-wright-ward/"
@@ -19,12 +23,16 @@
 
 - name: "Sunandan Chakraborty"
   position: "Faculty Founder"
+  title: :"Associate Professor"
+  school: "School of Informatics and Computing"
   current: true
   headshot: "schakraborty.jpg"
 
 - name: "Youngbok Hong"
   position: "Faculty Founder"
   pronouns: "she/her/hers"
+  title: "Professor"
+  school: "Herron School of Art + Design"
   current: true
   headshot: "yhong.jpg"
   linkedin: "https://www.linkedin.com/in/youngbok-hong-50150b/"
