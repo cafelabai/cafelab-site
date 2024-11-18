@@ -9,9 +9,13 @@
   iuprofile: "https://education.indianapolis.iu.edu/faculty-research/faculty-directory/price-jeremy.html"
 
 - name: "Lyniesha Ward"
+  pronouns: "she/her/hers"
   position: "Faculty Founder"
   current: true
-  headshot: "lward.jpg"
+  headshot: "lward.png"
+  linkedin: "https://www.linkedin.com/in/lyniesha-wright-ward/"
+  orcid: "https://orcid.org/0000-0001-8126-0872"
+  iuprofile: "https://science.indianapolis.iu.edu/people-directory/people/ward-lyniesha.html"
 
 - name: "Sunandan Chakraborty"
   position: "Faculty Founder"
