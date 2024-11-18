@@ -4,19 +4,20 @@ title: "CAFE Lab Projects"
 ---
 <div class="projects">
     <section class="project">
-<div class="container py-8">
+        <h1>Current Projects</h1>
+<div class="container py-10">
 {% for project in site.data.projects %}
 {% if project.status == "current" %}
     <div class="project-item">
     <div class="row">
-        <div class="col-4 project-logo">
+        <div class="col-5 project-logo">
             <img
                 class="project-logo"
                 src="assets/images/centr-seek-logo.png"
                 alt="CEnTR*SEEK logo"
               />
         </div>
-        <div class="col-8 project-description">
+        <div class="col-7 project-description">
             <h2>{{ project.title }}</h2>
             <p>{{ project.abstract }}</p>
             <div class="funding"><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
