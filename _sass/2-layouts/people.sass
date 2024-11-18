@@ -9,9 +9,7 @@
 
     &:nth-child(odd)
       background-color: $soft-beige
-
     .current-members
-
       .polaroid
         background: $white
         padding: 1rem
@@ -27,20 +25,24 @@
             object-fit: cover
             border-radius: 8px
             margin: 0 auto 1rem auto
+
           .polaroid-text
             padding: 0 0.5rem
             display: flex
             flex-direction: column
+
             h2
               font-size: 1.2rem
               font-weight: bold
               color: $espresso
               margin-bottom: 0.3rem
+
             .pronouns
               font-size: 0.8rem
               color: $green
               display: inline-block
               margin-bottom: 0.5rem
+
             .lab-position,
             .title,
             .school
@@ -49,33 +51,40 @@
               font-weight: normal
               color: $black
               line-height: 1.4
-          .polaroid-icons
-            padding-right: 0
-            a
-              font-size: 1.5rem
-              margin-right: 0.5rem
-              &.linkedin-icon
-                color: $linkedin-blue
-              &.orcid-icon
-                color: $orcid-green
-              &.iuprofile-icon
-                color: $iu-crimson
-              &.external-site-icon
-                color: $external-violet
-    .other-members .polaroid
-      margin: 0.5rem
 
-  .alumni
-    .container
-      width: 50%
-      margin-top: 1rem
-      text-align: center
+        .polaroid-icons
+          padding-right: 0
 
-      h2
-        margin-bottom: 1.5rem
-        font-size: 1rem
-        color: $red
-        margin-bottom: 1rem
+          a
+            font-size: 1.5rem
+            margin-right: 0.5rem
 
-        &:nth-child(even)
+            &.linkedin-icon
+              color: $linkedin-blue
+
+            &.orcid-icon
+              color: $orcid-green
+
+            &.iuprofile-icon
+              color: $iu-crimson
+
+            &.external-site-icon
+              color: $external-violet
+
+    .other-members
+      .polaroid
+        margin: 0.5rem
+
+    .alumni
+      .container
+        width: 50%
+        margin-top: 1rem
+        text-align: center
+
+        h2
+          margin-bottom: 1rem
+          font-size: 1rem
           color: $red
+
+          &:nth-child(even)
+            color: $red
