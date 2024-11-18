@@ -6,7 +6,7 @@ title: "CAFE Lab Projects"
 <div class="project">
     <h1>Current Projects</h1>
     {% for project in site.data.projects %}
-        {% if project.status == "Current" %}
+        {% if project.status == "current" %}
             <h2>{{ project.title }}</h2>
             <p>{{ project.abstract }}</p>
             <div><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
