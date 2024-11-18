@@ -22,10 +22,10 @@ title: "Meet the People"
           <div class="row polaroid-text">
             <div class="col-8 polaroid-text">
               <h2>{{ person.name }}</h2><br/>
-              <span class="pronouns">({{ person.pronouns }})</span>
-              <span class="position">{{ person.position }}</span>
-              <span class="title">{{ person.title }}</span>
-              <span class="school">{{ person.school }}</span>
+              <span class="pronouns">({{ person.pronouns }})</span><br />
+              <span class="position">{{ person.position }}</span><br />
+              <span class="title">{{ person.title }}</span><br />
+              <span class="school">{{ person.school }}</span><br />
             </div>
             <div class="col-4 polaroid-icons">
               {% if person.linkedin %}
@@ -54,7 +54,6 @@ title: "Meet the People"
         {% endif %}
         {% endfor %}
       </div>
-    </div>
     <h1>Students</h1>
       <div
         class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
