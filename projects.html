@@ -4,37 +4,26 @@ title: "CAFE Lab Projects"
 ---
 <div class="projects">
     <section class="project">
-        <h1>Current Projects</h1>
-        {% for project in site.data.projects %}
-            {% if project.status == "current" %}
-            <div class="project-item">
-                <h2>{{ project.title }}</h2>
-                <p>{{ project.abstract }}</p>
-                <div><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
-            </div>
-            {% endif %}
-        {% endfor %}
-    </section>
-</div>
-
-<div class="container py-5">
+<div class="container py-8">
 {% for project in site.data.projects %}
 {% if project.status == "current" %}
     <div class="project-item">
     <div class="row">
-        <div class="col-4 project-logo">
+        <div class="col-2 project-logo">
             <img
-                src="assets/images/centr_seek-just_logo-transparent.png"
+                src="assets/images/centr_seek-logo.png"
                 alt="CEnTR*SEEK logo"
-                width="150px"
               />
         </div>
-        <div class="col-8 project-description">
+        <div class="col-10 project-description">
             <h2>{{ project.title }}</h2>
             <p>{{ project.abstract }}</p>
+            <div><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
         </div>
     </div>
     </div>
 {% endif %}
 {% endfor %}
+</div>
+</section>
 </div>
