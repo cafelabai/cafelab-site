@@ -11,10 +11,17 @@
       background-color: $soft-beige
 
     .current-members
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      gap: 1rem
       .polaroid
         background: $white
         padding: 1rem
         margin: 1rem
+        max-width: 300px
+        width: 100%
+        text-align: center
 
         .row
           width: 100%
@@ -54,11 +61,16 @@
               line-height: 1.4
 
         .polaroid-icons
-          padding-right: 0
+          //padding-right: 0
+          display: flex
+          justify-content: flex-start
+          flex-wrap: wrap
+          gap: 0.5rem
 
           a
             font-size: 1.5rem
             margin-right: 0.5rem
+            display: inline-block
 
             &.linkedin-icon
               color: $linkedin-blue
