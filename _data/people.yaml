@@ -59,3 +59,13 @@
   position: "Graduate Research Assistant"
   current: true
   headshot: "placeholder-headshot.png"
+
+- name: "Christopher Rambo"
+  position: "Undergraduate Research Assistant"
+  current: true
+  headshot: "placeholder-headshot.png"
+
+- name: "Tara Pishvaee"
+  position: "Undergraduate Research Assistant"
+  current: true
+  headshot: "placeholder-headshot.png"
