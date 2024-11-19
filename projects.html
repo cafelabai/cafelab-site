@@ -62,8 +62,12 @@ title: "CAFE Lab Projects"
                 {% endif %}
             </p>
             <p>{{ project.abstract }}</p>
-            <p>Code Repository Name: {{ project.code-name }}</p> <!-- Debug output -->
-        </div>
+            {% if project.code-name %}
+            <p>test</p>
+          {% else %}
+            <p>Code name is missing</p> <!-- Debug output -->
+          {% endif %}
+              </div>
     </div>
     </div>
 {% endif %}
