@@ -5,7 +5,7 @@
   paper-url: "https://hdl.handle.net/1805/43444"
   paper-name: "CATpc: A Critical Activity Teacher Planning Companion"
   logo: "assets/images/catpc-logo.png"
-  status: current
+  status: completed
   abstract: |
     Large language models (LLM) represent a new and rapidly changing technological advancement for K12 STEM learning. It is critical at this point in time to investigate and provide pathways for including justice, equity, inclusion, and community cultural capital and wealth in designing LLM-based educational systems. In the context of developing an AI chatbot, this RAPID project will research the ways in which teachers can plan universally designed and culturally relevant and responsive K12 STEM learning activities and environments.
   funding: "National Science Foundation Award #2334631"
