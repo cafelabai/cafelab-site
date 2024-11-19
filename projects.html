@@ -19,8 +19,10 @@ title: "CAFE Lab Projects"
         </div>
         <div class="col-7 project-description">
             <h2>{{ project.title }}</h2>
+            {% if project.funding %}
+                <div class="funding"><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
+            {% endif %}
             <p>{{ project.abstract }}</p>
-            <div class="funding"><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
         </div>
     </div>
     </div>
