@@ -10,21 +10,21 @@ title: "CAFE Lab Projects"
 {% if project.status == "current" %}
     <div class="project-item">
     <div class="row">
-        <div class="col-5 project-logo">
+        <div class="col-3 project-logo">
             <img
                 class="project-logo"
                 src="assets/images/centr-seek-logo.png"
                 alt="CEnTR*SEEK logo"
               />
         </div>
-        <div class="col-7 project-description">
+        <div class="col-9 project-description">
             <h2>{{ project.title }}</h2>
             <p>
                 {% if project.funding %}
                     <span class="funding"><i class="fa-solid fa-money-check"></i>&nbsp;{{ project.funding }}</span>
                 {% endif %}
                 {% if project.tags %}
-                    <span class="tags"><i class="fa-solid fa-tags"></i>&nbsp;{{ project.tags }}</span>
+                    <span class="tags"><i class="fa-solid fa-tags"></i>&nbsp;{{ project.tags | join: ", " }}</span>
                 {% endif %}
             </p>
             <p>{{ project.abstract }}</p>
