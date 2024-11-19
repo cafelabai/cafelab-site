@@ -32,9 +32,14 @@ title: "CAFE Lab Projects"
                 {% endif %}
             </p>
             <p>{{ project.abstract }}</p>
-            <p>{{ project.abstract }}</p>
-            <p>{{ project.corep-name }}</p>
-            <p>test</p>
+            <div>
+            {% if project.paper-name %}
+                <i class="fa-regular fa-file-lines"></i>&nbsp;<a href="{{project.paper-url}}">{{ project.paper-name }}</a></p>
+            {% endif %}
+            {% if project.corep-name %}
+                <i class="fa-regular fa-file-code"></i>&nbsp;<a href="{{project.corep-url}}">{{ project.corep-name }}</a></p>
+            {% endif %}
+            </div>
         </div>
     </div>
     </div>
