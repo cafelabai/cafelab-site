@@ -13,12 +13,24 @@
   tags: [ "AI", "STEM", "Education", "Justice", "Equity", "Inclusion", "Community Cultural Capital", "Community Cultural Wealth" ]
 
 - title: "CEnTR*SEEK"
-  acronym-expand: "Community Engaged and Transformative Research SEEK"
+  acronym-expand: "Community Engaged and Transformative Research System for Extracting Engaged Knowledge"
   corep-url: "https://github.com/cafelabai/centr-seek"
   corep-name: "CEnTR*SEEK"
-  logo: "assets/images/centr_seek-just_logo-transparent.png"
+  logo: "assets/images/centr-seek-logo.png"
   abstract: |
     Community engaged research and public scholarship is included in the IU 2030 Strategic Plan. There are unstructured records of community engaged partnerships and projects in a dispersed range of data sources. Expanding community engaged and public scholarship in IU 2030 as a set of measurable objectives requires all efforts be identified, tracked, and supported. Building upon work accomplished through a 2024 Faculty Assistance in Data Science project, this semester-long project will explore and identify appropriate approaches three necessary tasks: transforming unstructured texts to usable data, machine learning classification algorithms to better categorize projects, and storing attributes of the project in a database. 
   status: current
   funding: "Indiana University Office of Research Microgrant"
   tags: [ "Community Engaged Research", "Transformative Research" ]
+
+- title: "CEnTR*IMPACT"
+  acronym-expand: "Community Engaged and Transformative Research Inclusive Measurement of Projects And Community Transformation"
+  abstract: TBD
+  status: current
+  logo: "assets/images/centr-impact-logo.png"
+
+- title: "LATTE"
+  acronym-expand: "Locally-aligned AI for Transforming Teaching and Education"
+  abstract: TBD
+  status: in-planning
+  logo: "assets/images/latte-logo.png"

@@ -88,3 +88,47 @@ title: "CAFE Lab Projects"
 </div>
 {% endif %}
 {% endfor %}
+</section>
+<section class="project">
+    <h1>Projects In-Preparation</h1>
+<div class="container py-12">
+{% assign sorted-projects = site.data.projects | sort: "title" %}
+{% for project in sorted-projects %}
+{% if project.status == "completed" %}
+<div class="project-item">
+<div class="row">
+    <div class="col-3 project-logo">
+        <img
+            class="project-logo"
+            src="{{ project.logo }}"
+            alt="{{ project.title }} logo"
+          />
+    </div>
+    <div class="col-9 project-description">
+        <h2>{{ project.title }}</h2>
+        {% if project.acronym-expand %}
+            <p class="acronym-expand">{{ project.acronym-expand }}</p>
+        {% endif %}
+        <p>
+            {% if project.funding %}
+                <span class="funding"><i class="fa-solid fa-money-check"></i>&nbsp;{{ project.funding }}</span>
+            {% endif %}
+            {% if project.tags %}
+                <span class="tags"><i class="fa-solid fa-tags"></i>&nbsp;{{ project.tags | join: ", " }}</span>
+            {% endif %}
+        </p>
+        <p>{{ project.abstract }}</p>
+        <div>
+        {% if project.paper-name %}
+            <i class="fa-regular fa-file-lines"></i>&nbsp;<a href="{{project.paper-url}}">{{ project.paper-name }}</a></p>
+        {% endif %}
+        {% if project.corep-name %}
+            <i class="fa-regular fa-file-code"></i>&nbsp;<a href="{{project.corep-url}}">{{ project.corep-name }}</a></p>
+        {% endif %}
+        </div>
+    </div>
+</div>
+</div>
+{% endif %}
+{% endfor %}
+</section>
