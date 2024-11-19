@@ -5,7 +5,7 @@ title: "CAFE Lab Projects"
 <div class="projects">
     <section class="project">
         <h1>Current Projects</h1>
-<div class="container py-10">
+<div class="container py-12">
 {% for project in site.data.projects %}
 {% if project.status == "current" %}
     <div class="project-item">
@@ -19,9 +19,14 @@ title: "CAFE Lab Projects"
         </div>
         <div class="col-7 project-description">
             <h2>{{ project.title }}</h2>
-            {% if project.funding %}
-                <div class="funding"><i class="fa-solid fa-money-check"></i> {{ project.funding }}</div>
-            {% endif %}
+            <p>
+                {% if project.funding %}
+                    <span class="funding"><i class="fa-solid fa-money-check"></i>&nbsp;{{ project.funding }}</span>
+                {% endif %}
+                {% if project.tags %}
+                    <span class="tags"><i class="fa-solid fa-tags"></i>&nbsp;{{ project.tags }}</span>
+                {% endif %}
+            </p>
             <p>{{ project.abstract }}</p>
         </div>
     </div>
