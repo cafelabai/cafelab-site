@@ -77,7 +77,9 @@ title: "Meet the People"
         </div>
         <div class="row polaroid-text">
           <div class="polaroid-text">
-            <span class="pronouns">({{ person.pronouns }})</span><br />
+            {% if person.pronouns %}
+              <span class="pronouns">({{ person.pronouns }})</span><br />
+            {% endif %}
             <span class="position">{{ person.position }}</span>
             <!--<span class="title">{{ person.title }}</span><br />
             <span class="school">{{ person.school }}</span><br />-->
