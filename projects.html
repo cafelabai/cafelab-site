@@ -6,6 +6,37 @@ title: "CAFE Lab Projects"
     <section class="project">
         <h1>Current Projects</h1>
 <div class="container py-12">
+{% assign sorted-projects = site.data.projects | sort: "title" %}
+{% for project in sorted-projects %}
+{% if project.status == "current" %}
+    <div class="project-item">
+    <div class="row">
+        <div class="col-3 project-logo">
+            <img
+                class="project-logo"
+                src="assets/images/centr-seek-logo.png"
+                alt="CEnTR*SEEK logo"
+              />
+        </div>
+        <div class="col-9 project-description">
+            <h2>{{ project.title }}</h2>
+            {% if project.acronym-expand %}
+                <p class="acronym-expand">{{ project.acronym-expand }}</p>
+            {% endif %}
+            <p>
+                {% if project.funding %}
+                    <span class="funding"><i class="fa-solid fa-money-check"></i>&nbsp;{{ project.funding }}</span>
+                {% endif %}
+                {% if project.tags %}
+                    <span class="tags"><i class="fa-solid fa-tags"></i>&nbsp;{{ project.tags | join: ", " }}</span>
+                {% endif %}
+            </p>
+            <p>{{ project.abstract }}</p>
+        </div>
+    </div>
+    </div>
+{% endif %}
+{% endfor %}
 {% for project in site.data.projects %}
 {% if project.status == "current" %}
     <div class="project-item">
