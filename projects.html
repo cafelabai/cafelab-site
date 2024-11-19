@@ -63,7 +63,7 @@ title: "CAFE Lab Projects"
             </p>
             <p>{{ project.abstract }}</p>
             {% if project.code-repository-title %}
-                <div><i class="fa-solid fa-file-code"></i>&nbsp;
+                <div class="code-line"><i class="fa-solid fa-file-code"></i>&nbsp;
                     <a href="{{ project.code-repository-url }}" class="code-item">{{ project.code-repository-title | join: ", " }}</a></span>
                 </div>
             {% endif %}
