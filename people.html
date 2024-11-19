@@ -62,7 +62,8 @@ title: "Meet the People"
     <h1>Students</h1>
     <h1>Faculty Leaders</h1>
     <div class="current-members d-flex justify-content-center flex-wrap mt-5 mb-3">
-      {% for person in site.data.people %}
+      {% assign sorted-people = site.data.people | sort: "name" %}
+      {% for person in sorted-people %}
       {% if person.current == true and (person.position == "Graduate Research Assistant" or person.position == "Undergraduate Research Assistant") %}
       <div class="polaroid d-flex flex-column shadow">
         <div class="row">
