@@ -8,7 +8,7 @@ title: "CAFE Lab Scholarship"
 {% assign sorted-scholarship = site.data.scholarship | sort: "date" %}
 
 <section class = "presentations py-4">
-  <h1><i class="ti ti-file-description" style="font-size: 5rem; margin-right: 1rem;"></i> Journal Publications</h1>
+  <h1><i class="ti ti-file-description" style="font-size: 3rem; margin-right: 1rem;"></i> Journal Publications</h1>
 {% for output in sorted-scholarship %}
 {% if output.type == "publication" %}
   <div class = "scholarship-item">{{ output.citation }}<img
