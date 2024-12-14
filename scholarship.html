@@ -4,6 +4,7 @@ layout: wrapper
 title: "CAFE Lab Scholarship"
 ---
 
+<div class = "outputs">
 {% assign sorted-scholarship = site.data.scholarship | sort: "date" %}
 {% for output in sorted-scholarship %}
 {% if output.type == "presentation" %}
@@ -31,3 +32,4 @@ title: "CAFE Lab Scholarship"
   </ul>
 {% endif %}
 {% endfor %}
+</div>

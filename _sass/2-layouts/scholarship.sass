@@ -1,0 +1,57 @@
+.outputs
+  section
+    width: 100%
+    &:nth-child(even)
+      background-color: $soft-beige
+
+    &:nth-child(odd)
+      background-color: $soft-beige
+
+    h1
+      font-size: 2rem
+      line-height: 120%
+      text-align: center
+      font-weight: bold
+      padding-top: 1rem
+      color: $espresso
+
+      @media screen and (max-width: 768px)
+        font-size: 1.75rem
+
+    .project-item
+      margin: 0 auto
+      display: flex
+      flex-wrap: wrap
+      @media (max-width: 600px)
+        .col
+          flex: 1 1 100% // On smaller screens, each column takes up 100% of the container's width
+
+      .project-description
+        h2
+          color: $red
+          //text-align: center
+          font-weight: bold
+          font-size: 1.5rem
+          margin-top: 0.5rem
+        
+        .acronym-expand
+          color: $red
+          font-size: 1.1rem
+
+        .funding
+          color: $green
+          font-size: 0.8rem
+
+        .tags
+          color: $blue
+          font-size: 0.8rem
+
+        .code-line
+          .code-item
+            color: $stone
+            font-size: 0.8rem
+        
+      .project-logo
+        max-width: 250px
+        object-fit: cover
+        margin: 0 auto 0.25rem auto
