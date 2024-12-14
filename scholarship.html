@@ -7,7 +7,11 @@ title: "CAFE Lab Scholarship"
 {% assign sorted-scholarship = site.data.scholarship | sort: "date" %}
 {% for output in sorted-scholarship %}
 {% if output.type == "presentation" %}
-<h1>Conference Presentationa and Papers</h1>
-  <i class="fa-solid fa-layer-group"></i>{{ output.citation }}<img src = "assets/images/{ output.project }-logo.png" alt = "{{ output.project }}" style = "width: 50px; height: 50px;">
+<h1>Conference Presentations and Papers</h1>
+  <i class="fa-solid fa-layer-group"></i>{{ output.citation }}<img
+  class="project-logo"
+  src="{{ output.logo }}"
+  alt="{{ output.project }} logo"
+/>
 {% endif %}
 {% endfor %}
