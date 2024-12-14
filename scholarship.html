@@ -3,9 +3,11 @@ permalink: /scholarship.html
 layout: wrapper
 title: "CAFE Lab Scholarship"
 ---
-{% for output in site.data.scholarship %}
+
+{% assign sorted-scholarship = site.data.scholarship | sort: "date" %}
+{% for output in sorted-scholarship %}
 {% if output.type == "presentation" %}
 <h1>Conference Presentationa and Papers</h1>
-  <i class="fa-solid fa-layer-group"></i>{{ output.project }}
+  <i class="fa-solid fa-layer-group"></i>{{ output.citation }}<img src = "assets/images/{ output.project }-logo.png" alt = "{{ output.project }}" style = "width: 50px; height: 50px;">
 {% endif %}
 {% endfor %}
