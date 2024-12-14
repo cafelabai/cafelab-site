@@ -1,0 +1,28 @@
+---
+permalink: /scholarship.html
+layout: wrapper
+title: "CAFE Lab Scholarship"
+---
+
+<div class = "outputs">
+{% assign sorted-scholarship = site.data.scholarship | sort: "date" %}
+
+<section class = "presentations py-4">
+  <h1><i class="ti ti-file-description" style="font-size: 3rem; margin-right: 0.75rem;"></i> Journal Publications</h1>
+{% for output in sorted-scholarship %}
+{% if output.type == "publication" %}
+  <div class = "scholarship-item">{{ output.citation }}</div>
+{% endif %}
+{% endfor %}
+</section>
+
+<section class="publications py-4">
+  {% for output in sorted-scholarship %}
+  {% if output.type == "presentation" %}
+    <h1><i class="ti ti-presentation-analytics" style="font-size: 3rem; margin-right: 0.75rem;"></i> Conference Presentations and Papers</h1>
+  <div class = "scholarship-item">{{ output.citation }}</div>
+  {% endif %}
+  {% endfor %}
+  </section>
+
+</div>

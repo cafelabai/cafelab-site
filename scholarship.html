@@ -5,24 +5,19 @@ title: "CAFE Lab Scholarship"
 ---
 
 <div class = "outputs">
-{% assign sorted-scholarship = site.data.scholarship | sort: "date" %}
 
-<section class = "presentations py-4">
+<section class = "publications py-4">
   <h1><i class="ti ti-file-description" style="font-size: 3rem; margin-right: 0.75rem;"></i> Journal Publications</h1>
-{% for output in sorted-scholarship %}
-{% if output.type == "publication" %}
-  <div class = "scholarship-item">{{ output.citation }}</div>
-{% endif %}
-{% endfor %}
+  <ul>
+    <li>Price, J. F., Chauhan, A. S., Jadhav, K. S., Arora, A., & Chakraborty, S. (In Preparation). Situating Generative AI in the Classroom Ecosystem: Designing a Teacher-Facing Chatbot to Support Inclusive Curriculum and Pedagogy. <cite>AI Enhanced Learning</cite>.</li>
+  </ul>
 </section>
 
-<section class="publications py-4">
-  {% for output in sorted-scholarship %}
-  {% if output.type == "presentation" %}
+<section class="presentations py-4">
     <h1><i class="ti ti-presentation-analytics" style="font-size: 3rem; margin-right: 0.75rem;"></i> Conference Presentations and Papers</h1>
-  <div class = "scholarship-item">{{ output.citation }}</div>
-  {% endif %}
-  {% endfor %}
+    <ul>
+      <li>Price, J. F., & Chakraborty, S. (2024, November 11). <cite>Working with Schools and Communities to Construct an AI Chatbot</cite>. Purdue AI in P-12 Education Conference, West Lafayette, IN.</li>
+    </ul>
   </section>
 
 </div>
