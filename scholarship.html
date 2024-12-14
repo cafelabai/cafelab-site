@@ -6,21 +6,10 @@ title: "CAFE Lab Scholarship"
 
 <div class = "outputs">
 {% assign sorted-scholarship = site.data.scholarship | sort: "date" %}
-{% for output in sorted-scholarship %}
-{% if output.type == "presentation" %}
-<h1><i class="fa-solid fa-users-between-lines"></i> Conference Presentations and Papers</h1>
-  <ul>
-  <li>{{ output.citation }}<img
-  class="project-logo"
-  src="{{ output.logo }}"
-  alt="{{ output.project }} logo"
-  style="width: 25px; height: 25px;"
-/></li>
-  </ul>
-{% endif %}
-{% endfor %}
+
 {% for output in sorted-scholarship %}
 {% if output.type == "publication" %}
+<section class = "presentations py-4">
 <h1><i class="fa-solid fa-file-lines"></i> Journal Publications</h1>
   <ul>
   <li>{{ output.citation }}<img
@@ -30,6 +19,24 @@ title: "CAFE Lab Scholarship"
   style="width: 25px; height: 25px;"
 /></li>
   </ul>
+</section>
 {% endif %}
 {% endfor %}
+
+{% for output in sorted-scholarship %}
+{% if output.type == "presentation" %}
+<section class="publications py-4">
+  <h1><i class="fa-solid fa-users-between-lines"></i> Conference Presentations and Papers</h1>
+  <ul>
+  <li>{{ output.citation }}<img
+  class="project-logo"
+  src="{{ output.logo }}"
+  alt="{{ output.project }} logo"
+  style="width: 25px; height: 25px;"
+/></li>
+  </ul>
+</section>
+{% endif %}
+{% endfor %}
+
 </div>
