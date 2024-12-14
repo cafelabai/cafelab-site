@@ -3,7 +3,9 @@ permalink: /scholarship.html
 layout: wrapper
 title: "CAFE Lab Scholarship"
 ---
-
+{% for output in site.data.scholarship %}
+{% if output.type == "presentation" %}
 <h1>Conference Presentationa and Papers</h1>
-
-<i class="fa-solid fa-layer-group"></i>{{ site.data.scholarship.project }}
+  <i class="fa-solid fa-layer-group"></i>{{ output.project }}
+{% endif %}
+{% endfor %}
